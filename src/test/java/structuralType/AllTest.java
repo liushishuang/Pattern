@@ -15,7 +15,8 @@ import org.junit.runners.Suite;
         CompositeTest.class,
         DecoratorTest.class,
         FacadeTest.class,
-        FlyWeightTest.class
+        FlyWeightTest.class,
+        ProxyTest.class
 })
 public class AllTest {
 }
