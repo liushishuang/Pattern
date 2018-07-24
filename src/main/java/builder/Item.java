@@ -1,4 +1,4 @@
-package Builder;
+package builder;
 
 /**
  * @Author: Liushishuang
@@ -6,4 +6,8 @@ package Builder;
  * @Date: 14:12 2018-7-24
  */
 public interface Item {
+    public String name();
+    public Packing packing();
+    public float price();
+
 }
