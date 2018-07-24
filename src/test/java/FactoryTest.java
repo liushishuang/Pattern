@@ -5,6 +5,7 @@ import Factory.ShapeFactory;
  * @Author: Liushishuang
  * @Description:
  * @Date: 10:10 2018-7-24
+ * 工厂方法设计模式
  */
 public class FactoryTest {
     public static void main(String[] args) {
