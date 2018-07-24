@@ -18,7 +18,7 @@ import structuralType.adapter.AudioPlayer;
  * AudioPlayer 使用适配器类 MediaAdapter 传递所需的音频类型，不需要知道能播放所需格式音频的实际类。AdapterPatternDemo，
  * 我们的演示类使用 AudioPlayer 类来播放各种格式。
  */
-public class AdapterType {
+public class AdapterTest {
     @Test
     public void testAdapterType() {
         AudioPlayer audioPlayer = new AudioPlayer();

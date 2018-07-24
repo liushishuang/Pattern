@@ -26,7 +26,6 @@ public class Mail implements Cloneable {
             //手动进行深度克隆
             mail = (Mail) super.clone();
         } catch (CloneNotSupportedException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
         return mail;

@@ -10,7 +10,12 @@ import org.junit.runners.Suite;
  */
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
-        AdapterType.class
+        AdapterTest.class,
+        BridgeTest.class,
+        CompositeTest.class,
+        DecoratorTest.class,
+        FacadeTest.class,
+        FlyWeightTest.class
 })
 public class AllTest {
 }
