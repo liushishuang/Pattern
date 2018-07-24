@@ -1,5 +1,5 @@
-import Factory.Shape;
-import Factory.ShapeFactory;
+import factory.Shape;
+import factory.ShapeFactory;
 
 /**
  * @Author: Liushishuang

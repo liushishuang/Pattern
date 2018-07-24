@@ -1,6 +1,6 @@
-import AbstractFactory.FactoryProducer;
-import AbstractFactory.AbstractFactory;
-import AbstractFactory.Shape;
+import abstractFactory.FactoryProducer;
+import abstractFactory.AbstractFactory;
+import abstractFactory.Shape;
 /**
  * @Author: Liushishuang
  * @Description:
