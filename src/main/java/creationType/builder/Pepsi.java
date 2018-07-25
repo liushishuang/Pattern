@@ -6,7 +6,7 @@ package creationType.builder;
  * @Date: 14:34 2018-7-24
  */
 public class Pepsi extends ColdDrink {
-    @Override
+
     public float price() {
         return 35.0f;
     }

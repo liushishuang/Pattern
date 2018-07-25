@@ -4,6 +4,7 @@ package creationType.abstractFactory;
  * @Author: Liushishuang
  * @Description:
  * @Date: 11:02 2018-7-24
+ * 可以定义多个Factory ,Red,Blue,Green
  */
 public class ColorFactory extends AbstractFactory {
 

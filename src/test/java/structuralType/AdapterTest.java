@@ -7,16 +7,13 @@ import structuralType.adapter.AudioPlayer;
  * @Author: Liushishuang
  * @Description:
  * @Date: 16:02 2018-7-24
- * 我们有一个 MediaPlayer 接口和一个实现了 MediaPlayer 接口的实体类 AudioPlayer。
- * 默认情况下，AudioPlayer 可以播放 mp3 格式的音频文件。
  *
- * 我们还有另一个接口 AdvancedMediaPlayer 和实现了 AdvancedMediaPlayer 接口的实体类。该类可以播放 vlc 和 mp4 格式的文件。
+ * => 对原有的类进行改造, 适应新接口参数
  *
- * 我们想要让 AudioPlayer 播放其他格式的音频文件。为了实现这个功能，我们需要创建一个实现了 MediaPlayer
- * 接口的适配器类 MediaAdapter，并使用 AdvancedMediaPlayer 对象来播放所需的格式。
- *
- * AudioPlayer 使用适配器类 MediaAdapter 传递所需的音频类型，不需要知道能播放所需格式音频的实际类。AdapterPatternDemo，
- * 我们的演示类使用 AudioPlayer 类来播放各种格式。
+ * 1.原始具有AdvancedMediaPlayer接口,播放vlc音乐和mp4音乐方法,直接传入fileName 想要它们实现新的接口MediaPlayer直接根据audioType,播放音乐
+ * 2.接口为MediaPlayer   void play(String audioType, String fileName) 适配器实现这个接口,并注入AdvancedMedaiPlayer
+ * 3. 适配器类构造方法 根据audioType方法,创建不同的对象,调用不同的方法->关联了接口,合成了具体的对象和方法
+ * 4. audioPlayer类,注入适配器, 统一一个方法进行播放操作
  */
 public class AdapterTest {
     @Test

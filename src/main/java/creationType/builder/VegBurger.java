@@ -6,7 +6,7 @@ package creationType.builder;
  * @Date: 14:23 2018-7-24
  */
 public class VegBurger extends Burger {
-    @Override
+
     public float price() {
         return 25.0f;
     }

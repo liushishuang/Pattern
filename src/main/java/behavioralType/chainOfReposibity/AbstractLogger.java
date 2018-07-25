@@ -10,6 +10,7 @@ public abstract class AbstractLogger {
     public static int DEBUG = 2;
     public static int ERROR = 3;
 
+    // 共1,2,3 级别,级别越大越严重...当严重的时候,记录小于它的所有日志,调用链的顺序为3,2,1
     protected int level;
 
     //责任链中下一个元素

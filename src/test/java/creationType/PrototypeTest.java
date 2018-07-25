@@ -7,6 +7,7 @@ import creationType.prototype.Mail;
  * @Author: Liushishuang
  * @Description:
  * @Date: 15:00 2018-7-24
+ * 创建对象的代价很大,需要复用
  */
 public class PrototypeTest {
     @Test

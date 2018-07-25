@@ -12,6 +12,6 @@ public class Circle extends Shape {
 
     @Override
     public void draw() {
-        color.Paint("圆形");
+        color.paint("圆形");
     }
 }

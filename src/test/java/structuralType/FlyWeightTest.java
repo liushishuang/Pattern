@@ -8,6 +8,8 @@ import structuralType.flyWight.ShapeFactory;
  * @Author: Liushishuang
  * @Description:
  * @Date: 19:20 2018-7-24
+ * 1.Shape接口和draw方法,实现类为Circle
+ * 2. 定义ShapeFactory,维护了一个HashMap,依赖的String为内蕴
  */
 public class FlyWeightTest {
     private static final String colors[] =

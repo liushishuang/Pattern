@@ -17,7 +17,7 @@ public class AudioPlayer implements MediaPlayer {
         //mediaAdapter 提供了播放其他文件格式的支持
         else if (audioType.equalsIgnoreCase("vlc")
                 || audioType.equalsIgnoreCase("mp4")) {
-            mediaAdapter = new MediaAdapter(audioType);
+            mediaAdapter = new MediaAdapter();
             mediaAdapter.play(audioType, fileName);
         } else {
             System.out.println("Invalid media. " +

@@ -12,6 +12,6 @@ public class Square extends Shape {
 
     @Override
     public void draw() {
-        color.Paint("方形");
+        color.paint("方形");
     }
 }

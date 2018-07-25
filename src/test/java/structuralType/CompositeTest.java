@@ -7,8 +7,13 @@ import structuralType.composite.Employee;
  * @Author: Liushishuang
  * @Description:
  * @Date: 18:18 2018-7-24
- * 在使用组合模式时，其叶子和树枝的声明都是实现类，而不是接口，违反了依赖倒置原则。
+ * 在使用  组合模式  时，其叶子和树枝的声明都是实现类，而不是接口，违反了依赖倒置原则。
  * 树枝和叶子实现统一接口, 树枝内部List组合接口
+ *
+ * =>将对象组合成树形结构来表示"部分-整体"的层次关系,,单个对象和组合对象的使用具有一致性
+ *
+ * - 定义的类,聚合了自身的数组, 定义了add/remove/遍历的方法
+ *
  */
 public class CompositeTest {
 
