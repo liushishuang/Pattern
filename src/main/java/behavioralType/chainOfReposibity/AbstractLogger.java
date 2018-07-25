@@ -2,7 +2,7 @@ package behavioralType.chainOfReposibity;
 
 /**
  * @Author: LiuShishuang
- * @Description:TODO
+ * @Description:
  * @Date: 0:10 2018/7/25
  */
 public abstract class AbstractLogger {
