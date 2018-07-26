@@ -2,6 +2,7 @@ package behavioralType;
 
 import behavioralType.state.Context;
 import behavioralType.state.StartState;
+import behavioralType.state.State;
 import behavioralType.state.StopState;
 import org.junit.Test;
 
@@ -20,16 +21,18 @@ import org.junit.Test;
 public class StateTest {
     @Test
     public void testState() {
-        Context context = new Context();
+        State startState = new StartState();
 
-        StartState startState = new StartState();
-        startState.doAction(context);
-        System.out.println(context.getState().toString());
 
-        StopState stopState = new StopState();
-        stopState.doAction(context);
 
-        System.out.println(context.getState().toString());
+        Context context = new Context(startState);
+
+       context.request();
+       context.request();
+       context.request();
+       context.request();
+       context.request();
+
 
     }
 }

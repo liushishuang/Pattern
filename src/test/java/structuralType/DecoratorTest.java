@@ -10,6 +10,8 @@ import structuralType.decorator.*;
  * 1. Shape类以及draw方法, 实现Shape的Circle类和Square类
  * 2. 装饰的抽象类 实现Shape接口 + 注入Shape接口,抽象方法来实现接口的方法(为了多了装饰)
  * 3. 具体的装饰类 继承了装饰抽象类  重写draw方法中,可以调用自定义的方法
+ *
+ * 通过接口传递装饰,可多次装饰
  */
 public class DecoratorTest {
     @Test
@@ -29,7 +31,7 @@ public class DecoratorTest {
         redSquare.draw();
         System.out.println("hello");
 
-
+       //双重装饰
         GreenShapeDecorator decorator = new GreenShapeDecorator(redCircle);
         decorator.draw();
     }

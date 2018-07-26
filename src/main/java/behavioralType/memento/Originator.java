@@ -4,6 +4,7 @@ package behavioralType.memento;
  * @Author: Liushishuang
  * @Description:
  * @Date: 14:34 2018-7-25
+ * 发起人
  */
 public class Originator {
     private String state;
@@ -22,5 +23,8 @@ public class Originator {
 
     public void getStateFromMemento(Memento Memento){
         state = Memento.getState();
+    }
+    public void show() {
+        System.out.println(String.format("state=%s", state));
     }
 }

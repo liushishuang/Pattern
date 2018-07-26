@@ -1,6 +1,8 @@
 package creationType;
 
+import creationType.builder.Director;
 import creationType.builder.Meal;
+import creationType.builder.MealABuilder;
 import creationType.builder.MealBuilder;
 import org.junit.Test;
 
@@ -38,4 +40,13 @@ public class BuilderTest {
         System.out.println("Total Cost: " +nonVegMeal.getCost());
     }
 
+    @Test
+    public void testBuilder2() {
+        Director director = new Director();
+        MealABuilder mealABuilder = new MealABuilder();
+       director.Construct(mealABuilder);
+        Meal result = mealABuilder.getResult();
+        result.showItems();
+
+    }
 }

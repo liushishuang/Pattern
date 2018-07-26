@@ -1,9 +1,6 @@
 package behavioralType;
 
-import behavioralType.command.Broker;
-import behavioralType.command.BuyStock;
-import behavioralType.command.SellStock;
-import behavioralType.command.Stock;
+import behavioralType.command.*;
 import org.junit.Test;
 
 /**
@@ -42,5 +39,15 @@ public class CommandTest {
 
         broker.placeOrders();
 
+    }
+
+    @Test
+    public void testCommand2() {
+        Receiver reciver = new Receiver();
+        Command command = new ConcrateCommand(reciver);
+        Invoker invoker = new Invoker();
+
+        invoker.setCommand(command);
+        invoker.excuteCommand();
     }
 }

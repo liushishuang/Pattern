@@ -1,9 +1,6 @@
 package behavioralType;
 
-import behavioralType.chainOfReposibity.AbstractLogger;
-import behavioralType.chainOfReposibity.ConsoleLogger;
-import behavioralType.chainOfReposibity.ErrorLogger;
-import behavioralType.chainOfReposibity.FileLogger;
+import behavioralType.chainOfReposibity.*;
 import org.junit.Test;
 
 /**
@@ -36,5 +33,21 @@ public class ChainOfReposibityTest {
                 "This is an error information.");
 
 
+    }
+
+    @Test
+    public void testChainOfReposibity2() {
+        Handler h1 = new ConcrateHandler1();
+        Handler h2 = new ConcrateHandler1();
+        Handler h3 = new ConcrateHandler1();
+
+        h1.setSuccessor(h2);
+        h2.setSuccessor(h3);
+
+        int[] requests = {2, 5, 14, 22, 18, 3, 27, 20};
+
+        for (int request: requests) {
+            h1.handleRequest(request);
+        }
     }
 }

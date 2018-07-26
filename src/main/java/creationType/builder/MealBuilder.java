@@ -4,6 +4,7 @@ package creationType.builder;
  * @Author: Liushishuang
  * @Description:
  * @Date: 14:35 2018-7-24
+ * 这里是具体的建造者,也许不是最好的选择
  */
 public class MealBuilder {
 
