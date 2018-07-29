@@ -1,5 +1,8 @@
 package behavioralType;
 
+import behavioralType.mediator.ConcrateColleague1;
+import behavioralType.mediator.ConcrateColleague2;
+import behavioralType.mediator.ConcrateMediator;
 import behavioralType.mediator.User;
 import org.junit.Test;
 
@@ -14,8 +17,7 @@ import org.junit.Test;
  * 我们通过聊天室实例来演示中介者模式。实例中，多个用户可以向聊天室发送消息，
  * 聊天室向所有的用户显示消息。我们将创建两个类 ChatRoom 和 User。User 对象使用 ChatRoom 方法来分享他们的消息。
  *
- * 1. 对象之间的交互,中介者起到中心化的作用,不需要引入所有其它对象,而只是使用了聊天室的方法,并注入自己独特标识 this =>依赖了聊天室和外部Message
- * 2. 聊天室需要记录每个对象的信息,需要记录User
+ * 将交互复杂性 => 中介者的复杂性
  */
 public class MediatorTest {
     @Test
@@ -26,5 +28,20 @@ public class MediatorTest {
         robert.sendMessage("Hi! John!");
         john.sendMessage("Hello! Robert!");
 
+    }
+
+    @Test
+    public void testMediator2() {
+        ConcrateMediator mediator = new ConcrateMediator();
+
+        //让两个具体的同事类认识中介者对象
+        ConcrateColleague1 colleague1 = new ConcrateColleague1(mediator);
+        ConcrateColleague2 colleague2 = new ConcrateColleague2(mediator);
+        //中介者对象认识具体的同事类
+        mediator.setColleague1(colleague1);
+        mediator.setColleague2(colleague2);
+        // 具体同事类的发送信息都是通过中介者转发的 (实际调用的是中介者的send方法)
+        colleague1.send("吃过饭了吗?");
+        colleague2.send("没有呢，你打算请客?");
     }
 }

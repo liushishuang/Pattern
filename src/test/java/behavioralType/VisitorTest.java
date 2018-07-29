@@ -16,4 +16,10 @@ public class VisitorTest {
         ComputerPart computer = new Computer();
         computer.accept(new ComputerPartDisplayVisitor());
     }
+
+    // 人分为男人/女人 状态为成功/失败, 其中人的种类不多变
+    @Test
+    public void testVisitor2() {
+
+    }
 }

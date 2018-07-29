@@ -4,6 +4,7 @@ package behavioralType.visitor;
  * @Author: Liushishuang
  * @Description:
  * @Date: 15:36 2018-7-25
+ * 定义的时候比较特殊
  */
 public class Computer implements ComputerPart {
 
