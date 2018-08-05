@@ -14,6 +14,7 @@ package creationType.singleton;
  *
  */
 public class Singleton4 {
+    //如果不适用的话,由于重排序的存在,分配和对象的内存空间,但是对象还没有进行初始化
     private static volatile Singleton4 singleton4;
     private Singleton4(){}
 
@@ -22,6 +23,7 @@ public class Singleton4 {
             synchronized (Singleton4.class) {
 
                 if (singleton4 == null) {
+                    //应确保已经初始化
                     singleton4 = new Singleton4();
                 }
             }
