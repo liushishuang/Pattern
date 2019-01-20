@@ -4,7 +4,7 @@ package creationType.singleton;
  * @Author: Liushishuang
  * @Description:
  * @Date: 11:31 2018-7-24
- * 懒汉式,效率慢
+ * 懒汉式,效率慢 (方法上加锁--如果是读取操作也需要使用锁)
  */
 public class Singleton3 {
     private static Singleton3 singleton3;

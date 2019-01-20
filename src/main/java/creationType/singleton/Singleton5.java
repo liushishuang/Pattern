@@ -4,7 +4,7 @@ package creationType.singleton;
  * @Author: Liushishuang
  * @Description:
  * @Date: 11:31 2018-7-24
- * 登记式/静态内部类
+ * 登记式/静态内部类---优雅
  * 懒加载,线程安全
  */
 public class Singleton5 {
