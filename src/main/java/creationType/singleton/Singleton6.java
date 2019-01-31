@@ -11,7 +11,7 @@ public class Singleton6 {
 
     }
 
-    private enum Singleton {
+    public enum Singleton {
         INSTANCE;
 
         private final Singleton6 instance;

@@ -26,7 +26,7 @@ public class SingletonTest {
 
         Singleton5 singleton5 = Singleton5.getInstance();
 
-        Singleton6 singleton6 = Singleton6.INSTANCE;
+        Singleton6 singleton6 = Singleton6.getInstance();
 
     }
 
