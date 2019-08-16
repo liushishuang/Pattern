@@ -33,13 +33,13 @@ import org.junit.runners.Suite;
  */
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
-        creationType.AllTest.class,
-        structuralType.AllTest.class,
-        behavioralType.AllTest.class
+        pattern.creationType.AllTest.class,
+        pattern.structuralType.AllTest.class,
+        pattern.behavioralType.AllTest.class
 })
 public class AllTest {
     /**
-     *
+     * 0. 单一职责原则
      * 1. 依赖倒转原则DIP (Dependence Inversion Principle): 针对接口编程,依赖抽象而不是依赖于具体, 是开闭原则的基础
      * 2. 开闭原则OCP  (Open Close Principle): 对扩展开放, 对修改关闭
      * 3. 里氏替换原则LSK  (Liskov Substitution Principle):只有当衍生类可以替换掉基类
