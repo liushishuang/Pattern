@@ -1,8 +1,9 @@
 package pattern.creationType.factory.factorymethod.pizzastore.order;
 
-import com.atguigu.factory.factorymethod.pizzastore.pizza.BJCheesePizza;
-import com.atguigu.factory.factorymethod.pizzastore.pizza.BJPepperPizza;
-import com.atguigu.factory.factorymethod.pizzastore.pizza.Pizza;
+
+import pattern.creationType.factory.factorymethod.pizzastore.pizza.BJCheesePizza;
+import pattern.creationType.factory.factorymethod.pizzastore.pizza.BJPepperPizza;
+import pattern.creationType.factory.factorymethod.pizzastore.pizza.Pizza;
 
 /**
  * 工厂方法模式--将创建对象的方法作为抽象类的方法,等待实现类去实现

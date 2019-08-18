@@ -1,9 +1,10 @@
 package pattern.creationType.factory.simplefactory.pizzastore.order;
 
-import com.atguigu.factory.simplefactory.pizzastore.pizza.CheesePizza;
-import com.atguigu.factory.simplefactory.pizzastore.pizza.GreekPizza;
-import com.atguigu.factory.simplefactory.pizzastore.pizza.PepperPizza;
-import com.atguigu.factory.simplefactory.pizzastore.pizza.Pizza;
+
+import pattern.creationType.factory.simplefactory.pizzastore.pizza.CheesePizza;
+import pattern.creationType.factory.simplefactory.pizzastore.pizza.GreekPizza;
+import pattern.creationType.factory.simplefactory.pizzastore.pizza.PepperPizza;
+import pattern.creationType.factory.simplefactory.pizzastore.pizza.Pizza;
 
 //简单工厂类--定义了一个创建对象的类，由这个类来封装实例化对象的行为(代码)
 public class SimpleFactory {

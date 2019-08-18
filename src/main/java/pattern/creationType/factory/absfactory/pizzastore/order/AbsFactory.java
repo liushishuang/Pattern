@@ -1,6 +1,7 @@
 package pattern.creationType.factory.absfactory.pizzastore.order;
 
-import com.atguigu.factory.absfactory.pizzastore.pizza.Pizza;
+
+import pattern.creationType.factory.absfactory.pizzastore.pizza.Pizza;
 
 //一个抽象工厂模式的抽象层(接口)
 public interface AbsFactory {

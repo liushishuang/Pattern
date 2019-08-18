@@ -1,6 +1,8 @@
 package pattern.creationType.factory.simplefactory.pizzastore.order;
 
-import com.atguigu.factory.simplefactory.pizzastore.pizza.Pizza;
+
+
+import pattern.creationType.factory.simplefactory.pizzastore.pizza.Pizza;
 
 import java.io.BufferedReader;
 import java.io.IOException;

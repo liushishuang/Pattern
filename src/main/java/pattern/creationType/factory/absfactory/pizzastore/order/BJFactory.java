@@ -1,8 +1,9 @@
 package pattern.creationType.factory.absfactory.pizzastore.order;
 
-import com.atguigu.factory.absfactory.pizzastore.pizza.BJCheesePizza;
-import com.atguigu.factory.absfactory.pizzastore.pizza.BJPepperPizza;
-import com.atguigu.factory.absfactory.pizzastore.pizza.Pizza;
+
+import pattern.creationType.factory.absfactory.pizzastore.pizza.BJCheesePizza;
+import pattern.creationType.factory.absfactory.pizzastore.pizza.BJPepperPizza;
+import pattern.creationType.factory.absfactory.pizzastore.pizza.Pizza;
 
 //这是工厂子类
 public class BJFactory implements AbsFactory {
