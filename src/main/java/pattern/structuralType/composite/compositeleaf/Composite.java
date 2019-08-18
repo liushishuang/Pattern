@@ -1,10 +1,10 @@
-package pattern.structuralType.composite;
+package pattern.structuralType.composite.compositeleaf;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Composite extends Component {
-	private List<Component> children = new ArrayList<Component>();
+	private List<Component> children = new ArrayList<>();
 	
 	public Composite(String name) {
 		super(name);

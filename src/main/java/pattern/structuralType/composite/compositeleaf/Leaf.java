@@ -1,4 +1,4 @@
-package pattern.structuralType.composite;
+package pattern.structuralType.composite.compositeleaf;
 
 /**
  * 叶节点对象

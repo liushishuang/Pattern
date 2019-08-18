@@ -1,4 +1,4 @@
-package pattern.structuralType.composite;
+package pattern.structuralType.compositeleaf;
 
 /**
  * 对象声明接口

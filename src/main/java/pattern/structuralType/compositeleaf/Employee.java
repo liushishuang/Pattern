@@ -1,4 +1,4 @@
-package pattern.structuralType.composite;
+package pattern.structuralType.compositeleaf;
 
 import java.util.ArrayList;
 import java.util.List;
