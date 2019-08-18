@@ -6,6 +6,7 @@ package pattern.structuralType.flyWight;
  * @Date: 19:23 2018-7-24
  */
 public class Circle implements Shape {
+    //共享的颜色
     private String color;
     private int x;
     private int y;
