@@ -19,7 +19,7 @@ class Singleton {
 	
 	//1. 构造器私有化, 外部能new
 	private Singleton() {
-		
+
 	}
 	
 
